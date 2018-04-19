@@ -1,0 +1,12 @@
+TCI_TS %{YEAR}-%{MONTH}-%{MONTHDAY} %{TIME}
+TCI_ERRLVL (ERROR)|(INFO)|(DEBUG)|(WARN)
+TCI_PT \[[A-Za-z0-9\-\:\ _]*\]
+TCI_ACTIVITYNAME [A-Za-z0-9:\ _.]*-
+TCI_ID \[[A-Za-z0-9\-\::\ _.]*\]
+TCI_JOBID (JobId %{TCI_ID})
+TCI_PIID (ProcessInstanceId %{TCI_ID})
+TCI_PPIID (ParentProcessInstanceId %{TCI_ID})
+TCI_ACTIVITY (Activity %{TCI_ID})
+TCI_PROCESS (Process %{TCI_ID})
+TCI_MODULE (Module %{TCI_ID})
+TCI_APPLICATION (Application %{TCI_ID})
