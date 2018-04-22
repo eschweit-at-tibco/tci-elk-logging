@@ -25,7 +25,7 @@ as well as the following ones for BusinessWorks applications:
 </ul>
  
 There are many options when it comes to running the ELK stack you'll dump those contents to, included running it directly from GCP (Hosted on GCP, offered by Elasticsearch) or AWS (Amazon Elasticsearch Service).
-I tried Bitnami's ELK image for Amazon EC2 and could recommend it: it is well documented, leaves access to server via <code>ssh</code>, and leaves a lot of flexibility when it comes to configuration, including installing TCI's <code>tibcli</code>.
+I tried Bitnami's ELK image for Amazon EC2 and would recommend it: it is well documented, leaves access to server via <code>ssh</code>, and leaves a lot of flexibility when it comes to configuration, including installing TCI's <code>tibcli</code>.
 You get all the documentation on <a href="https://docs.bitnami.com/aws/apps/elk/">Bitnami's website</a>. 
 
 Should you happen to use Bitnami's, here is what to do with the two files:
