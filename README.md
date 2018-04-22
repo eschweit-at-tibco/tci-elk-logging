@@ -32,7 +32,7 @@ Should you happen to use Bitnami's, here is what to do with the two files:
 <ul>
   <li><code>cp tci-log.conf /opt/bitnami/logstash/conf</code></li>
   <li><code>mkdir /opt/bitnami/logstash/patterns</code></li>
-  <li><code>cp tci-grok-patterns /opt/bitnami/logstash/patterns</code></li>
+  <li><code>cp patterns/tci-grok-patterns /opt/bitnami/logstash/patterns</code></li>
 </ul>
 
 And here is how you would start logstash (making sure you are logged in TCI with <code>tibcli</code>:
