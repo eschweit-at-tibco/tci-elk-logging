@@ -10,18 +10,18 @@ You'll find the two necessary files:
 
 This extracts a number of properties from the logs, which will be dropped in Elasticsearch, that you can use in Kibana to discover you data and visualise it:
 <ul>
-  <li>errlvl</li>
-  <li>tcipt</li>
+  <li><code>errlvl</code> the error level ERROR, DEBUG, WARN, or INFO,</li>
+  <li><code>tcipt</code> the process and thread information</li>
 </ul>
 as well as the following ones for BusinessWorks applications:
 <ul>
-  <li><code>tcijobid</code> the job ID</li>
-  <li><code>tcipiid</code> the process ID</li>
-  <li><code>tcippiid</code> the parent process ID (if this is about a subprocess)</li>
-  <li><code>tciactivity</code> the activity name</li>
-  <li><code>tciprocess</code> the process name</li>
-  <li><code>tcimod</code> the module name</li>
-  <li><code>tciapp</code> the application name</li>
+  <li><code>tcijobid</code> the job ID,</li>
+  <li><code>tcipiid</code> the process ID,</li>
+  <li><code>tcippiid</code> the parent process ID (if this is about a subprocess),</li>
+  <li><code>tciactivity</code> the activity name,</li>
+  <li><code>tciprocess</code> the process name,</li>
+  <li><code>tcimod</code> the module name,</li>
+  <li><code>tciapp</code> the application name.</li>
 </ul>
  
 There are many options when it comes to running the ELK stack you'll dump those contents to, included running it directly from GCP (Hosted on GCP, offered by Elasticsearch) or AWS (Amazon Elasticsearch Service).
