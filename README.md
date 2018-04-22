@@ -35,6 +35,6 @@ Should you happen to use Bitnami's, here is what to do with the two files:
   <li><code>cp patterns/tci-grok-patterns /opt/bitnami/logstash/patterns</code></li>
 </ul>
 
-And here is how you would start logstash (making sure you are logged in TCI with <code>tibcli</code>:
+And here is how you would start logstash (making sure you are logged in TCI with <code>tibcli</code>):
 <code>./tibcli monitor applog -s <your application's name> | sudo /opt/bitnami/logstash/bin/logstash -f /opt/bitnami/logstash/conf/tci.conf</code>
 
