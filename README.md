@@ -2,7 +2,7 @@
 
 ## Contents
 
-This is a small contribution aimed at getting you started more quickly when about to dump TCI (<a href="https://www.tibco.com/products/cloud-integration">TIBCO Cloud Integration</a>) log files to ELK (Elasticsearch Logstash, and Kibana)
+This is a small contribution aimed at getting you started more quickly when about to dump TCI (<a href="https://www.tibco.com/products/cloud-integration">TIBCO Cloud Integration</a>) log files into ELK (Elasticsearch Logstash, and Kibana)
 
 You'll find the two necessary files:
 <ul>
