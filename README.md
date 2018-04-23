@@ -1,5 +1,7 @@
 # tci-elk-logging
 
+# Contents
+
 This is a small contribution aimed at getting you started more quickly when about to dump TCI (<a href="https://www.tibco.com/products/cloud-integration">TIBCO Cloud Integration</a>) log files to ELK (Elasticsearch Logstash, and Kibana)
 
 You'll find the two necessary files:
@@ -23,12 +25,16 @@ as well as the following ones for BusinessWorks applications:
   <li><code>tcimod</code> the module name,</li>
   <li><code>tciapp</code> the application name.</li>
 </ul>
- 
+
+## Running the ELK stack
+
 There are many options when it comes to running the ELK stack you'll dump those contents to, included running it directly from GCP (Hosted on GCP, offered by Elasticsearch) or AWS (Amazon Elasticsearch Service).
 I tried Bitnami's ELK image for Amazon EC2 and would recommend it: it is well documented, leaves access to server via <code>ssh</code>, and leaves a lot of flexibility when it comes to configuration, including installing TCI's <code>tibcli</code>.
 You get all the documentation on <a href="https://docs.bitnami.com/aws/apps/elk/">Bitnami's website</a>. 
 
-Should you happen to use Bitnami's, here is what to do with the two files:
+## Configuring Logstash and streaming the logs
+
+Should you happen to use Bitnami's image, here is what to do with the two files:
 <ul>
   <li><code>cp tci-log.conf /opt/bitnami/logstash/conf</code></li>
   <li><code>mkdir /opt/bitnami/logstash/patterns</code></li>
@@ -38,3 +44,19 @@ Should you happen to use Bitnami's, here is what to do with the two files:
 And here is how you would start logstash (making sure you are logged in TCI with <code>tibcli</code>):
 <code>./tibcli monitor applog -s <your application's name> | sudo /opt/bitnami/logstash/bin/logstash -f /opt/bitnami/logstash/conf/tci.conf</code>
 
+## Built With
+
+* Elasticsearch, Logstash, and Kibana
+* [TIBCO Cloud Integration](https://integration.cloud.tibco.com/)
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgements
+
+* Philippe Gabert 
